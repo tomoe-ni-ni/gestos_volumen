@@ -5,11 +5,26 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #e7f3fe; /* Color de fondo suave */
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
 }
 
 .container {
     text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+}
+
+h1 {
+    color: #0056b3; /* Color azul para el encabezado */
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Transición suave */
+}
+
+h1:hover {
+    transform: scale(1.05); /* Efecto de hover en el encabezado */
 }
 
 .video-container {
@@ -19,11 +34,34 @@ body {
 #video {
     width: 80%;
     max-width: 600px;
-    border: 2px solid #ccc;
+    border: 2px solid #0056b3; /* Borde azul */
     border-radius: 10px;
+    animation: fadeIn 1s; /* Animación al cargar el video */
 }
 
 .volume-display {
     font-size: 24px;
     color: #333;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #0056b3; /* Fondo azul para el footer */
+    color: white; /* Texto blanco */
+    border-radius: 0 0 15px 15px; /* Bordes redondeados en la parte inferior */
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
